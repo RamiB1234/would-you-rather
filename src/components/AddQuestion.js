@@ -1,6 +1,6 @@
 import React , { Component } from 'react'
 
-class AddPoll extends Component{
+class AddQuestion extends Component{
     render(){
         return(
             <div>
@@ -10,4 +10,4 @@ class AddPoll extends Component{
     }
 }
 
-export default AddPoll
+export default AddQuestion
