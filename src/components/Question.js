@@ -8,9 +8,9 @@ class Question extends Component{
         return(
             <div>
                 <div className='row'>
-                    <div className='col-md-2'></div>
-                    <div className='col-md-10'>
-                    <div className="card" style={{width: '40%'}}>
+                    <div className='col-md-3'></div>
+                    <div className='col-md-6 text-center'>
+                    <div className="card" style={{width: '100%'}}>
                 <h5 className="card-header">{this.props.question.name} asks would you rather:</h5>
                 <div className="card-body">
                     <div className='row'>
@@ -29,7 +29,7 @@ class Question extends Component{
                 </div>
                 </div>
                     </div>
-                    <div className='col-md-2'></div>
+                    <div className='col-md-3'></div>
                 </div>
             </div>
         )

@@ -9,7 +9,7 @@ import Question from './Question'
 class Dashboard extends Component{
     render(){
         return(
-            <div>
+            <div className='text-center'>
                 <Tabs>
                     <TabList>
                     <Tab>Unanswered</Tab>
