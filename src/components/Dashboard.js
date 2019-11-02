@@ -19,7 +19,7 @@ class Dashboard extends Component{
                     <TabPanel>
                     <ul>
                     {this.props.questionIds.map((id) => {
-                        if(isAnsweredQuestion(id, this.props.questions, this.props.authedUser)){
+                        if(isAnsweredQuestion(id, this.props.questions, this.props.authedUser)===false){
                             return(
                                     <li key={id}>
                                         <Question id={id}/>
@@ -32,7 +32,7 @@ class Dashboard extends Component{
                     <TabPanel>
                     <ul>
                     {this.props.questionIds.map((id) => {
-                        if(isAnsweredQuestion(id, this.props.questions, this.props.authedUser)===false){
+                        if(isAnsweredQuestion(id, this.props.questions, this.props.authedUser)===true){
                             return(
                                     <li key={id}>
                                         <Question id={id}/>
