@@ -16,7 +16,7 @@ class App extends Component {
   render(){
     return (
       <Router>
-        <Nav />
+        <Nav authedUser={this.props.authedUser} />
         {this.props.loading === true ? null :
           <div>
           <Route path="/" exact component={Dashboard} />
@@ -33,6 +33,7 @@ class App extends Component {
 
 function mapStateToProps({authedUser}){
   return {
+    authedUser,
     loading: authedUser === null
   }
 }

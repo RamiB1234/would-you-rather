@@ -15,7 +15,7 @@ class Question extends Component{
                 <div className="card-body">
                     <div className='row'>
                         <div className='col-md-6'>
-                        <img src={this.props.question.avatarURL} width='120' height='120'/>
+                        <img src={this.props.question.avatarURL} width='120' height='120' alt='avatar'/>
                         </div>
                         <div className='col-md-6'>
                         <p className="card-text">

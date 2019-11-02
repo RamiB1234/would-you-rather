@@ -20,3 +20,8 @@
 .App-link {
   color: #09d3ac;
 }
+
+.btn-logout{
+  padding: 2px 7px;
+  border-radius: 3px;
+}
