@@ -8,26 +8,26 @@ class Nav extends Component {
         <ul>
           <li>
             <NavLink to="/" exact activeClassName="active">
-              <b>Home</b>
+              Home
             </NavLink>
           </li>
           <li>
             <NavLink to="/add" activeClassName="active">
-              <b>Add Question</b>
+              Add Question
             </NavLink>
           </li>
           <li>
             <NavLink to="/leaderboard" activeClassName="active">
-              <b>Leaderboard</b>
+              Leaderboard
             </NavLink>
           </li>
         </ul>
         <ul className="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li className="nav-item">
             <b>Welcome {this.props.authedUser}</b>
           </li>
-          <li class="nav-item">
-            <butto className='btn btn-primary btn-logout'>Logout</butto>
+          <li className="nav-item">
+            <button className='btn btn-primary btn-logout'>Logout</button>
           </li>
         </ul>
       </nav>

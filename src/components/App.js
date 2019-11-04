@@ -8,6 +8,7 @@ import Nav from './Nav'
 import Dashboard from './Dashboard'
 import AddQuestion from './AddQuestion'
 import Leaderboard from './Leaderboard'
+import QuestionDetails from './QuestionDetails'
 
 class App extends Component {
   componentDidMount(){
@@ -22,6 +23,8 @@ class App extends Component {
           <Route path="/" exact component={Dashboard} />
           <Route path="/add" component={AddQuestion} />
           <Route path="/leaderboard" component={Leaderboard} />
+          <Route path="/questions/:questionId"
+          render={props =><QuestionDetails questionId={props.match.params.questionId}/>} />
         </div>
         }
         

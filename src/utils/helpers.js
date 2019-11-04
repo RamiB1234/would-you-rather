@@ -24,3 +24,17 @@ export function isAnsweredQuestion(questionId, questions, authedUser){
         return false
     }
 }
+
+
+export function fetchUserAnswer(questionId, questions, authedUser){
+    const question = questions[questionId]
+    const optionOneVotes = question.optionOne.votes
+    const optionTwoVotes = question.optionTwo.votes
+
+    if(optionOneVotes.includes(authedUser)){
+        return 'optionOne'
+    }
+    else if(optionTwoVotes.includes(authedUser)){
+        return 'optionTwo'
+    }
+}

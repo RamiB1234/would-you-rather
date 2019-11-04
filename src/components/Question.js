@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {formatQuestion} from '../utils/helpers'
+import {Link} from "react-router-dom"
 
 class Question extends Component{
     render(){
@@ -23,7 +24,7 @@ class Question extends Component{
                          <b>OR</b><br/>
                         2. {this.props.question.optionTwo}
                     </p>
-                    <a href="#" className="btn btn-block btn-success">Details</a>
+                    <Link to={`/questions/${this.props.question.id}`} className="btn btn-success">Details</Link>
                         </div>
                     </div>
                 </div>

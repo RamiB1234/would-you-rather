@@ -18,28 +18,30 @@ class Dashboard extends Component{
                 
                     <TabPanel>
                     <ul>
-                    {this.props.questionIds.map((id) => {
-                        if(isAnsweredQuestion(id, this.props.questions, this.props.authedUser)===false){
-                            return(
+                    {this.props.questionIds.filter((id)=> (
+                        isAnsweredQuestion(id, this.props.questions, this.props.authedUser)===false
+                    )).map((id) => {
+                        return(
                                     <li key={id}>
                                         <Question id={id}/>
                                     </li>
                             )
-                        }
-                    })}
+      
+                        })}
                 </ul>
                     </TabPanel>
                     <TabPanel>
                     <ul>
-                    {this.props.questionIds.map((id) => {
-                        if(isAnsweredQuestion(id, this.props.questions, this.props.authedUser)===true){
-                            return(
+                    {this.props.questionIds.filter((id)=> (
+                        isAnsweredQuestion(id, this.props.questions, this.props.authedUser)===true
+                    )).map((id) => {
+                        return(
                                     <li key={id}>
                                         <Question id={id}/>
                                     </li>
                             )
-                        }
-                    })}
+      
+                        })}
                 </ul>
                     </TabPanel>
                 </Tabs>
