@@ -9,6 +9,7 @@ import Dashboard from './Dashboard'
 import AddQuestion from './AddQuestion'
 import Leaderboard from './Leaderboard'
 import QuestionDetails from './QuestionDetails'
+import Login from './Login'
 
 class App extends Component {
   componentDidMount(){
@@ -16,7 +17,9 @@ class App extends Component {
   }
   render(){
     return (
-      <Router>
+      <div>
+      {this.props.authedUser === null ? <Login /> : (
+        <Router>
         <Nav authedUser={this.props.authedUser} />
         {this.props.loading === true ? null :
           <div>
@@ -27,8 +30,10 @@ class App extends Component {
           render={props =><QuestionDetails questionId={props.match.params.questionId}/>} />
         </div>
         }
-        
       </Router>
+      )}
+      </div>
+
     )
   }
 

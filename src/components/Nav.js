@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import {logoutUser} from '../actions/authedUser'
+import {connect} from 'react-redux'
 
 class Nav extends Component {
   render() {
@@ -27,7 +29,8 @@ class Nav extends Component {
             <b>Welcome {this.props.authedUser}</b>
           </li>
           <li className="nav-item">
-            <button className='btn btn-primary btn-logout'>Logout</button>
+            <button className='btn btn-primary btn-logout'
+            onClick={()=> this.props.dispatch(logoutUser())}>Logout</button>
           </li>
         </ul>
       </nav>
@@ -35,4 +38,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav
+export default connect()(Nav)
