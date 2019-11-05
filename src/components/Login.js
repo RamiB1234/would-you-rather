@@ -8,8 +8,6 @@ class Login extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-
-    alert(this.state.selectedUser)
     
     // dispatch
     this.props.dispatch(setAuthedUser(this.state.selectedUser));
