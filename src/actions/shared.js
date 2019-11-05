@@ -6,6 +6,7 @@ import {addQuestion} from './questions'
 import {addUserQuestion} from './users'
 import {addQuestionAnswer} from './questions'
 import {addUserQuestionAnswer} from './users'
+import { showLoading, hideLoading } from 'react-redux-loading-bar'
 
 export function handleInitialData() {
     return (dispatch) => {
@@ -19,13 +20,14 @@ export function handleInitialData() {
 
 export function handleAddQuestion(optionA, optionB){
     return (dispatch, getState) =>{
-
+        dispatch(showLoading())
         const {authedUser} = getState()
 
         return saveQuestion({optionOneText: optionA, optionTwoText: optionB, author: authedUser})
         .then((question)=>{
             dispatch(addQuestion(question))
             dispatch(addUserQuestion(question.id, authedUser))
+            dispatch(hideLoading())
         })
     }
 }
