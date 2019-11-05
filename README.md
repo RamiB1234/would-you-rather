@@ -20,6 +20,7 @@ To get started testing right away:
 
 ### Technology Used
 This application was developed using the beautiful **React** framework and **Redux** for handling application state
+
 ![React-Redux Logo](/public/images/react and redux.jpg)
 
 ### License
