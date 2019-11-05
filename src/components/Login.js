@@ -36,7 +36,7 @@ class Login extends Component {
             <div className="card-body">
               <h5 className="card-title">Welcome to Would you Rather App</h5>
               <img
-                src={process.env.PUBLIC_URL + "/images/react and redux.jpg"}
+                src={process.env.PUBLIC_URL + "/images/react-and-redux.jpg"}
                 alt="react logo"
               />
               <p className="card-text">Please select a user</p>

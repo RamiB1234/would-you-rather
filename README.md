@@ -21,8 +21,8 @@ To get started testing right away:
 ### Technology Used
 This application was developed using the beautiful **React** framework and **Redux** for handling application state
 
-![React-Redux Logo](/public/images/react and redux.jpg)
+![React-Redux Logo](/public/images/react-and-redux.jpg)
 
 ### License
-The project is release under [MIT](https://github.com/RamiB1234/would-you-rather/blob/master/LICENSE) License
+The project is released under [MIT](https://github.com/RamiB1234/would-you-rather/blob/master/LICENSE) License
 
