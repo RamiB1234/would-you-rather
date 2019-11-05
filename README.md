@@ -4,6 +4,10 @@
 
 Would you Rather is a game that let users answer questions by selecting one of two options. Users can also post new questions and see leaderboard that has number of activities each user has made.
 
+## Live Demo
+
+To test the last build of the app, click on this [link](https://ramib1234.github.io/would-you-rather/)
+
 ##### Feature summary:
   - User login/logout
   - Dashboard page that shows tabs for showing unanswered and answered questions
